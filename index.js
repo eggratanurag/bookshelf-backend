@@ -1,12 +1,12 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const connectDB = require("./db/config");
+const connectDB = require("./backend/db/config");
 const cors = require("cors");
 const colors = require("colors");
 const path = require('path');
-const userRoutes = require("./routes/userRoutes.js");
-const booksRoutes = require("./routes/booksRoutes.js");
-const {notFound, errorHandler} = require("./middleware/errorMiddleware.js")
+const userRoutes = require("./backend/routes/userRoutes.js");
+const booksRoutes = require("./backend/routes/booksRoutes.js");
+const {notFound, errorHandler} = require("./backend/middleware/errorMiddleware.js")
 
 
 dotenv.config();
